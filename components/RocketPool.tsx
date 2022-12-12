@@ -6,8 +6,8 @@ type Props = {}
 
 export const RocketPool = (props: Props) => {
   return (
-    <div className="flex flex-col space-y-2 text-sm sm:text-base md:text-lg bg-clip-text text-transparent bg-gradient-to-b from-white via-white/90 to-white/70">
-      <div className="flex flex-col space-y-2 sm:space-y-0 text-center items-center sm:flex-row sm:space-x-4 md:space-x-8 tracking-wider pb-2">
+    <div className="flex flex-col space-y-2 text-sm sm:text-base md:text-lg text-stone-700 dark:text-stone-50 bg-clip-text text-transparent bg-gradient-to-b from-white via-white/90 to-white/70">
+      <div className="flex flex-col space-y-2  sm:space-y-0 text-center items-center sm:flex-row sm:space-x-4 md:space-x-8 tracking-wider pb-2">
         <div className="flex items-center bg-clip-text text-transparent bg-gradient-to-tr from-orange-500 via-orange-400 to-yellow-600">
           <Link href={"https://rocketpool.net"} className="font-bold tracking-tighter uppercase md:text-lg w-[90px] sm:w-[110px] md:w-[120px]">
             Rocket Pool

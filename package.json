@@ -1,7 +1,6 @@
 {
-  "name": "@pryority/nemiwind",
+  "name": "eth-staking-info",
   "version": "0.2.1",
-  "bin": "./bin/cli.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

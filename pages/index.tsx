@@ -2,8 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import {ArrowDownIcon, ArrowTopRightOnSquareIcon} from "@heroicons/react/24/outline";
-import Nav from "../components/Nav";
-import rocketPoolLogo from "../rocketpool.png";
+// import Nav from "../components/Nav";
+import rocketPoolLogo from "../public/rocketpool.png";
 import {RocketPool} from "../components/RocketPool";
 
 export default function Home() {
@@ -50,6 +50,8 @@ export default function Home() {
           <div className="flex flex-col space-y-8 md:space-x-2 items-center">
             <iframe className="rounded border-2" src="https://dune.com/embeds/991483/1716887/f86ab809-0549-44d0-ae01-f2865e83279d" height="500" width="100%" title="chart 2"/>
           </div>
+
+          <Image src={rocketPoolLogo} alt="Made by @EVMaverick392" objectFit="cover" className="w-full"/>
         </div>
       </main>
     </div>

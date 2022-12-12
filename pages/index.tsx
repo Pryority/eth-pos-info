@@ -35,7 +35,7 @@ export default function Home() {
 
           {/* <Nav /> */}
           <div className="flex flex-col items-center text-center space-y-4 py-40 text-white/50">
-            <div className="">A powerful solution from maximal decentralization</div>
+            <div className="">Deposit funds to a contract to trustlessly stake and manage your ETH</div>
             <ArrowDownIcon className="h-4 w-4"/>
           </div>
 

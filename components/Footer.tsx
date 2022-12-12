@@ -1,9 +1,6 @@
 import React from "react";
-import Image from "next/image";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
 import Link from "next/link";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
-// import { Faucet } from "~~/components/scaffold-eth";
 
 export default function Footer() {
   return (

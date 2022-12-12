@@ -41,7 +41,7 @@ export default function Home() {
 
           <div className="py-8 flex flex-col items-center space-y-8">
             <Link href={"https://rocketpool.net"}>
-              <Image src={rocketPoolLogo} alt="" layout="fill object-cover"/>
+              <Image src={`${rocketPoolLogo}`} alt="" layout="fill object-cover"/>
             </Link>
             <RocketPool/>
           </div>

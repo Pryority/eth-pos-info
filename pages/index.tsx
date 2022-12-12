@@ -26,7 +26,7 @@ export default function Home() {
           
           <span><Link href={"https://ethereum.org/en/upgrades/merge/"} className="transition-all ease-in-out hover:text-orange-400 duration-75">ETH2 </Link> currently has a <Link href={"https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/"} className="transition-all ease-in-out hover:text-yellow-300 duration-75">Proof of Stake (PoS)</Link> chain called the <Link href={"https://beaconcha.in/"} className="transition-all ease-in-out hover:text-teal-300 duration-75">Beacon Chain</Link>, <Link href={"https://beaconcha.in/"} className="transition-all ease-in-out hover:text-green-500 duration-75">which is faster, more energy efficient and more decentralised</Link> than <Link href={"https://ethereum.org/en/developers/docs/consensus-mechanisms/pow"} className="transition-all ease-in-out hover:text-stone-400 duration-75">PoW</Link>. {"It's"} <Link href={"https://rocketpool.net/"} className="transition-all ease-in-out hover:text-cyan-400 duration-75">powered by users depositing ETH and providing an Ethereum node online 24/7 to perform the required validation</Link>. As a reward for providing the node, the <Link href={"https://beaconcha.in/"} className="transition-all ease-in-out hover:text-teal-300 duration-75">Beacon Chain</Link> gives node operators additional ETH on top of their deposits. It can be viewed similarly to earning interest in a bank account, with the exception that these rewards are generated in return for helping secure the network.</span>
 
-          <iframe className="rounded border-2" src="https://dune.com/embeds/991513/1716891/0f7acad0-41b3-4c0f-ba03-ef43aa0b16f2" height="500" width="100%" title="chart 3"/>
+          {/* <iframe className="rounded border-2" src="https://dune.com/embeds/991513/1716891/0f7acad0-41b3-4c0f-ba03-ef43aa0b16f2" height="500" width="100%" title="chart 3"/> */}
 
           <Link href="https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake" className="flex items-center space-x-1 transition-all ease-in-out hover:text-pink-300 duration-75 w-full justify-center md:justify-end">
             <span className="text-[11px] sm:text-sm"><span className="font-medium">{"Vitalik's"}</span> explanation of Proof-Of-Stake (POS)</span>
@@ -41,7 +41,7 @@ export default function Home() {
 
           <div className="py-8 flex flex-col items-center space-y-8">
             <Link href={"https://rocketpool.net"}>
-              <Image src={`${rocketPoolLogo}`} alt="" layout="fill object-cover"/>
+              <Image src={rocketPoolLogo} alt="" className="fill object-cover"/>
             </Link>
             <RocketPool/>
           </div>

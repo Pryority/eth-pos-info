@@ -8,6 +8,7 @@ import aiEthArt from "../public/aiEthArt.jpeg";
 import {RocketPool} from "../components/RocketPool";
 import ethStaker from "../public/ethstaker.jpeg";
 import stakeIcon from "../public/stake-icon.png";
+import { TwitterTimelineEmbed, TwitterShareButton, TwitterFollowButton, TwitterHashtagButton, TwitterMentionButton, TwitterTweetEmbed, TwitterMomentShare, TwitterDMButton, TwitterVideoEmbed, TwitterOnAirButton } from "react-twitter-embed";
 
 export default function Home() {
   return (
@@ -42,9 +43,15 @@ export default function Home() {
           </div>
 
           <Link href="https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake" className="flex items-center space-x-1 transition-all ease-in-out hover:text-pink-300 duration-75 w-full justify-center md:justify-end">
-            <span className="text-[11px] sm:text-sm"><span className="font-medium">{"Vitalik's"}</span> explanation of Proof-Of-Stake (POS)</span>
+            <span className="text-[10px] sm:text-sm"><span className="font-medium">{"Vitalik's"}</span> explanation of Proof-Of-Stake (POS)</span>
             <ArrowTopRightOnSquareIcon className="h-4 w-4 font-bold"/>
           </Link>
+
+          {/* <div className="flex flex-col items-center justify-center">
+            <TwitterTweetEmbed
+              tweetId={"1562923144901697538"}
+            />
+          </div> */}
 
           <iframe className="rounded border-2 bg-white/60" src="https://dune.com/embeds/991513/1716891/0f7acad0-41b3-4c0f-ba03-ef43aa0b16f2" height="500" width="100%" title="chart 3"/>
 
@@ -77,6 +84,32 @@ export default function Home() {
                 <ArrowTopRightOnSquareIcon className="h-3 w-3 md:h-6 md:w-6 font-bold"/>
               </div>
             </Link>
+          </div>
+
+          <div className="grid sm:grid-cols-2 xl:grid-cols-4 space-x-2 items-center justify-center h-">
+            <div className="flex w-full h-fit justify-center">
+              <TwitterTweetEmbed
+                tweetId={"1564636358244765696"}
+              />
+            </div>
+          
+            <div className="flex w-full h-fit justify-center">
+              <TwitterTweetEmbed
+                tweetId={"1562769656309436417"}
+              />
+            </div>
+
+            <div className="flex w-full h-fit justify-center">
+              <TwitterTweetEmbed
+                tweetId={"1597889744821944320"}
+              />
+            </div>
+
+            <div className="flex w-full h-fit justify-center">
+              <TwitterTweetEmbed
+                tweetId={"1562167460576612355"}
+              />
+            </div>
           </div>
 
           <div className="flex flex-col items-center space-y-2">

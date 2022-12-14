@@ -60,13 +60,13 @@ export default function Home() {
           </div>
 
           <Link href="https://vitalik.eth.limo/general/2017/12/31/pos_faq.html#what-is-proof-of-stake" className="flex items-center space-x-1 transition-all ease-in-out hover:text-pink-300 duration-75 w-full justify-center md:justify-end">
-            <span className="text-[10px] sm:text-sm"><span className="font-medium">{"Vitalik's"}</span> explanation of Proof-Of-Stake (POS)</span>
-            <ArrowTopRightOnSquareIcon className="h-4 w-4 font-bold"/>
+            <span className="text-[9px] sm:text-sm"><span className="font-medium">{"Vitalik's"}</span> explanation of Proof-Of-Stake (POS)</span>
+            <ArrowTopRightOnSquareIcon className="h-3 w-3 sm:h-4 sm:w-4 font-bold"/>
           </Link>
 
           <iframe className="rounded border-2 bg-white/60" src="https://dune.com/embeds/991513/1716891/0f7acad0-41b3-4c0f-ba03-ef43aa0b16f2" height="500" width="100%" title="chart 3"/>
           
-          <div className="flex flex-col items-center text-center space-y-4 py-40 text-sm md:text-base dark:text-white/50 text-stone-900/50">
+          <div className="flex flex-col items-center text-center space-y-4 py-20 sm:py-40 text-sm md:text-base dark:text-white/50 text-stone-900/50">
             <div className="">Deposit funds to a contract to trustlessly stake and manage your ETH</div>
             <ArrowDownIcon className="h-4 w-4"/>
           </div>
@@ -95,7 +95,7 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="grid h-full sm:grid-cols-2 xl:grid-cols-4 space-x-2 items-center justify-center py-8">
+          <div className="grid h-full sm:grid-cols-2 xl:grid-cols-4 sm:space-x-2 items-center justify-center py-8">
             <div className="flex w-full justify-center">
               <TwitterTweetEmbed
                 tweetId={"1600939533721567233"}
@@ -123,13 +123,13 @@ export default function Home() {
 
           <div className="flex flex-col items-center space-y-2">
             <Image src={aiEthArt} alt="Made by @EVMaverick392" className="w-full rounded"/>
-            <p className="opacity-75">Made by <Link href={"https://twitter.com/EVMaverick392"} className="transition-all ease-in-out hover:text-blue-600 font-bold duration-75">@EVMaverick392</Link></p>
+            <p className="opacity-75 text-sm sm:text-base md:text-lg">Made by <Link href={"https://twitter.com/EVMaverick392"} className="transition-all ease-in-out hover:text-blue-600 font-bold duration-75">@EVMaverick392</Link></p>
           </div>
           <section className="flex flex-col items-center space-y-2">
             <article className="flex w-full">
-              <div className="flex flex-col space-y-4 bg-slate-400/30 dark:bg-slate-900/30 p-8 rounded-md w-full">
+              <div className="flex flex-col space-y-4 bg-slate-400/30 dark:bg-slate-900/30 p-4 sm:p-6 md:p-8 rounded-md w-full">
                 <div className="flex items-center w-full justify-between">
-                  <p className="font-bold w-full text-sky-500 dark:text-yellow-300/70">VALIDATORS</p>
+                  <p className="font-bold text-sm sm:text-base md:text-lg w-full text-sky-500 dark:text-yellow-300/70">VALIDATORS</p>
                   <div className={!showValidators ? `${"flex w-full items-center justify-end"}`: "hidden"}>
                     <PlusCircleIcon className="h-8 w-8 text-slate-50 dark:text-slate-600 fill-slate-400/40 dark:fill-black/40 hover:text-slate-300 hover:fill-black/60 transition-all ease-in-out duration-75 cursor-pointer" onClick={toggleValidators}/>
                   </div>
@@ -152,9 +152,9 @@ export default function Home() {
           </section>
           <section className="flex flex-col items-center space-y-2">
             <article className="flex w-full">
-              <div className="flex flex-col space-y-4 bg-slate-400/30 dark:bg-slate-900/30 p-8 rounded-md w-full">
+              <div className="flex flex-col space-y-4 bg-slate-400/30 dark:bg-slate-900/30 p-4 sm:p-6 md:p-8 rounded-md w-full">
                 <div className="flex items-center w-full justify-between">
-                  <p className="font-bold w-full text-sky-500 dark:text-yellow-300/70">CRYPTO-ECONOMIC SECURITY</p>
+                  <p className="font-bold text-sm sm:text-base md:text-lg w-full text-sky-500 dark:text-yellow-300/70">CRYPTO-ECONOMIC SECURITY</p>
                   <div className={!showCryptoSecurity ? `${"flex w-full items-center justify-end"}`: "hidden"}>
                     <PlusCircleIcon className="h-8 w-8 text-slate-50 dark:text-slate-600 fill-slate-400/40 dark:fill-black/40 hover:text-slate-300 hover:fill-black/60 transition-all ease-in-out duration-75 cursor-pointer" onClick={toggleCryptoSecurity}/>
                   </div>
@@ -174,10 +174,10 @@ export default function Home() {
           </section>
           <section className="flex flex-col items-center space-y-2">
             <article className="flex w-full">
-              <div className="flex flex-col space-y-4 bg-slate-400/30 dark:bg-slate-900/30 p-8 rounded-md w-full">
+              <div className="flex flex-col space-y-4 bg-slate-400/30 dark:bg-slate-900/30 p-4 sm:p-6 md:p-8 rounded-md w-full">
                 <div className="flex items-center w-full justify-between">
-                  <p className="font-bold w-full text-sky-500 dark:text-yellow-300/70">FORK CHOICE</p>
-                  <div className={!showForkChoice ? `${"flex w-full items-center justify-end"}`: "hidden"}>
+                  <p className="font-bold text-sm sm:text-base md:text-lg w-full text-sky-500 dark:text-yellow-300/70">FORK CHOICE</p>
+                  <div className={!showForkChoice ? `${"flex"}`: "hidden"}>
                     <PlusCircleIcon className="h-8 w-8 text-slate-50 dark:text-slate-600 fill-slate-400/40 dark:fill-black/40 hover:text-slate-300 hover:fill-black/60 transition-all ease-in-out duration-75 cursor-pointer" onClick={toggleForkChoice}/>
                   </div>
                 </div>
@@ -197,9 +197,9 @@ export default function Home() {
           </section>
           <section className="flex flex-col items-center space-y-2">
             <article className="flex w-full">
-              <div className="flex flex-col space-y-4 bg-slate-400/30 dark:bg-slate-900/30 p-8 rounded-md w-full">
+              <div className="flex flex-col space-y-4 bg-slate-400/30 dark:bg-slate-900/30 p-4 sm:p-6 md:p-8 rounded-md w-full">
                 <div className="flex items-center w-full justify-between">
-                  <p className="font-bold w-full text-sky-500 dark:text-yellow-300/70">FINALITY</p>
+                  <p className="font-bold text-sm sm:text-base md:text-lg w-full text-sky-500 dark:text-yellow-300/70">FINALITY</p>
                   <div className={!showFinality ? `${"flex w-full items-center justify-end"}`: "hidden"}>
                     <PlusCircleIcon className="h-8 w-8 text-slate-50 dark:text-slate-600 fill-slate-400/40 dark:fill-black/40 hover:text-slate-300 hover:fill-black/60 transition-all ease-in-out duration-75 cursor-pointer" onClick={toggleFinality}/>
                   </div>
@@ -220,9 +220,9 @@ export default function Home() {
           </section>
           <section className="flex flex-col items-center space-y-2">
             <article className="flex w-full">
-              <div className="flex flex-col space-y-4 bg-slate-400/30 dark:bg-slate-900/30 p-8 rounded-md w-full">
+              <div className="flex flex-col space-y-4 bg-slate-400/30 dark:bg-slate-900/30 p-4 sm:p-6 md:p-8 rounded-md w-full">
                 <div className="flex items-center w-full justify-between">
-                  <p className="font-bold w-full text-sky-500 dark:text-yellow-300/70">PROOF-OF-STAKE AND SECURITY</p>
+                  <p className="font-bold text-sm sm:text-base md:text-lg w-full text-sky-500 dark:text-yellow-300/70">PROOF-OF-STAKE AND SECURITY</p>
                   <div className={!showPOSSecurity ? `${"flex w-full items-center justify-end"}`: "hidden"}>
                     <PlusCircleIcon className="h-8 w-8 text-slate-50 dark:text-slate-600 fill-slate-400/40 dark:fill-black/40 hover:text-slate-300 hover:fill-black/60 transition-all ease-in-out duration-75 cursor-pointer" onClick={togglePOSSecurity}/>
                   </div>
